@@ -1,0 +1,96 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- covid_symptoms
+- covid_test
+- covid_transmit
+- covid_vaccine
+- covid_what
+- covid_where
+- deny
+- goodbye
+- greet
+- how_many_total_cases
+- mood_great
+- mood_unhappy
+- omicron_what
+- positive_questions
+- quarantine_questions
+entities:
+- place
+- type
+responses:
+  utter_greet:
+  - text: Hey! Do you have any questions about COVID-19?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Good bye! Stay safe!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_what:
+  - text: What questions do you have?
+  utter_met:
+  - text: Did you meet the person in the past 14 days?
+  utter_ask_vaccine_state:
+  - text: Have you received your third dose of the COVID vaccine more than 14 days ago?
+  utter_confirm_recovered_state:
+  - text: Have you recovered from COVID-19 in the past three months?
+  utter_3vacc_guidelines:
+  - text: As of 19th May 2022, individuals who have got three doses or have recovered from COVID-19 in can be exempted from home isolation, but instead should undergo a seven-day self-initiated epidemic prevention. During this seven-day period, self-initiated measures should be observed, and proof of a negative result from an at-home rapid test taken within two days should be presented if they need to go out to work or buy daily necessities; resting at home and taking a rapid test are advised if symptoms appear.
+    image: https://tnimage.s3.hicloud.net.tw/photos/2022/05/16/1652693627-62821a7ba6bab.png
+  utter_novacc_guidelines:
+  - text: 'As of 16th May 2022, close contacts of confirmed cases who have not received the third dose, they must follow the 3+4 rule and enter home isolation for three days, followed by four days of self-health monitoring. While undergoing home isolation, COVID contacts must not step outside their residences, and they should take a rapid antigen test on the third day. '
+    image: https://tnimage.s3.hicloud.net.tw/photos/2022/05/16/1652693627-62821a7ba6bab.png
+  utter_covid_is:
+  - text: According to Wikipedia, coronavirus disease 2019 (COVID-19) is a contagious disease caused by a virus, the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).
+  utter_covid_symptoms:
+  - text: According to WHO, common symptoms include fever, cough, tiredness and loss of taste or smell; less common symptoms include sore throat, headache, diarrhoea, and irritated eyes; serious symptoms can include chest pain, loss of speech, and shortness of breath.
+    image: https://pbs.twimg.com/media/FDj_LOJVQAIrTjX.png
+  utter_omicron_is:
+  - text: Omicron is the most transmissable variant of COVID-19. According to the CDC, the Omicron variant spreads more easily than earlier variants of the virus that cause COVID-19, including the Delta variant.
+  utter_covid_where:
+  - text: The first known case was identified in Wuhan, China, in December 2019.
+  utter_covid_transmit:
+  - text: The virus can spread from an infected person's mouth or nose in small liquid particles when they cough, sneeze, speak, sing or breathe.
+    image: https://pmj.bmj.com/content/postgradmedj/96/1142/753/F1.large.jpg
+  utter_covid_test:
+  - text: |-
+      Two types of COVID-19 tests are popular: the polymerase chain reaction (PCR) test and the antigen test (rapid test). Both tests require a sample from the patient, usually a nasal swab. The rapid test is less accurate and cannot detect small amounts of the virus or asymptomatic cases like PCR.
+
+      Note: People with positive results will have 2 lines shown on the Take-Home Rapid or PCR Test.
+    image: https://pbs.twimg.com/media/ErKtGhSVcAE6MV4.jpg
+  utter_positive_result:
+  - text: |-
+      NTU students diagnosed with COVID must contact your respective dorm councelor for your respective home care placement. 
+
+      Following the seven days of home care, COVID cases then begin seven days of self-health management. During this phase, people can venture outside the home without taking a rapid antigen test but cannot go to crowded places, restaurants, gatherings, or other social activities.
+  utter_covid_vaccine:
+  - text: |-
+      The vaccines available in Taiwan are: 
+      1. AstraZeneca 
+      2. Moderna 
+      3. Pfizer 
+      4. Medigen
+
+      To get your vaccination dose, please go to the following website:
+       http://antiflu.cdc.gov.tw/Covid19
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- action_ask_recovered_state
+- action_ask_vaccine_state
+- action_get_report
+- action_sleep
+- utter_3vacc_guidelines
+- utter_ask_vaccine_state
+- utter_confirm_recovered_state
+- utter_greet
+- utter_novacc_guidelines

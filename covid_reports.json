@@ -1,0 +1,167 @@
+{
+   "Taiwan": {
+      "url": "https://covid-19.nchc.org.tw/dt_005-covidTable_taiwan.php",
+      "Total cases": "2,841,696",
+      "Daily cases": "+79,663",
+      "Total deaths": "4,008",
+      "Death cases": "+211",
+      "Total vaccinated": "56,217,878",
+      "Daily vaccinated": "+140,690",
+      "First dose": "90.9%",
+      "Second dose": "82.29%"
+   },
+   "New Taipei City": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u65b0\u5317\u5e02",
+      "Total cases": "714,685",
+      "Daily cases": "+10,728",
+      "First dose": "89.1%",
+      "Second dose": "82.2%"
+   },
+   "Taipei City": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u53f0\u5317\u5e02",
+      "Total cases": "311,245",
+      "Daily cases": "+5,384",
+      "First dose": "88.3%",
+      "Second dose": "81.1%"
+   },
+   "Taoyuan City": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u6843\u5712\u5e02",
+      "Total cases": "347,621",
+      "Daily cases": "+6,487",
+      "First dose": "91.7%",
+      "Second dose": "83.2%"
+   },
+   "Miaoli County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u82d7\u6817\u7e23",
+      "Total cases": "48,385",
+      "Daily cases": "+1,812",
+      "First dose": "90.4%",
+      "Second dose": "81.7%"
+   },
+   "Keelung City": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u57fa\u9686\u5e02",
+      "Total cases": "67,817",
+      "Daily cases": "+1,022",
+      "First dose": "89.8%",
+      "Second dose": "83.5%"
+   },
+   "Changhua County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u5f70\u5316\u7e23",
+      "Total cases": "102,475",
+      "Daily cases": "+5,991",
+      "First dose": "92.1%",
+      "Second dose": "83.7%"
+   },
+   "Taichung City": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u53f0\u4e2d\u5e02",
+      "Total cases": "273,923",
+      "Daily cases": "+11,341",
+      "First dose": "90.7%",
+      "Second dose": "82.1%"
+   },
+   "Yilan County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u5b9c\u862d\u7e23",
+      "Total cases": "56,448",
+      "Daily cases": "+1,331",
+      "First dose": "90.6%",
+      "Second dose": "82.8%"
+   },
+   "Hsinchu County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u65b0\u7af9\u7e23",
+      "Total cases": "71,672",
+      "Daily cases": "+1,842",
+      "First dose": "90.9%",
+      "Second dose": "81.5%"
+   },
+   "Hualien County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u82b1\u84ee\u7e23",
+      "Total cases": "43,937",
+      "Daily cases": "+1,074",
+      "First dose": "86.8%",
+      "Second dose": "78%"
+   },
+   "Kaohsiung City": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u9ad8\u96c4\u5e02",
+      "Total cases": "277,317",
+      "Daily cases": "+13,047",
+      "First dose": "90.8%",
+      "Second dose": "82.5%"
+   },
+   "Tainan City": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u53f0\u5357\u5e02",
+      "Total cases": "161,485",
+      "Daily cases": "+7,038",
+      "First dose": "91%",
+      "Second dose": "81.7%"
+   },
+   "Hsinchu City": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u65b0\u7af9\u5e02",
+      "Total cases": "50,472",
+      "Daily cases": "+1,490",
+      "First dose": "90.6%",
+      "Second dose": "80.8%"
+   },
+   "Pingtung County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u5c4f\u6771\u7e23",
+      "Total cases": "71,879",
+      "Daily cases": "+3,369",
+      "First dose": "90.4%",
+      "Second dose": "81%"
+   },
+   "Nantou County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u5357\u6295\u7e23",
+      "Total cases": "33,451",
+      "Daily cases": "+1,584",
+      "First dose": "90.8%",
+      "Second dose": "82.5%"
+   },
+   "Taitung County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u53f0\u6771\u7e23",
+      "Total cases": "21,304",
+      "Daily cases": "+959",
+      "First dose": "85.2%",
+      "Second dose": "75.8%"
+   },
+   "Yunlin County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u96f2\u6797\u7e23",
+      "Total cases": "39,171",
+      "Daily cases": "+2,027",
+      "First dose": "91.7%",
+      "Second dose": "82.4%"
+   },
+   "Chiayi County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u5609\u7fa9\u7e23",
+      "Total cases": "27,813",
+      "Daily cases": "+1,583",
+      "First dose": "91.3%",
+      "Second dose": "82.8%"
+   },
+   "Chiayi City": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u5609\u7fa9\u5e02",
+      "Total cases": "17,845",
+      "Daily cases": "+951",
+      "First dose": "90.5%",
+      "Second dose": "81%"
+   },
+   "Penghu County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u6f8e\u6e56\u7e23",
+      "Total cases": "4,700",
+      "Daily cases": "+283",
+      "First dose": "90.1%",
+      "Second dose": "83.4%"
+   },
+   "Lienchiang County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u9023\u6c5f\u7e23",
+      "Total cases": "863",
+      "Daily cases": "+26",
+      "First dose": "92.9%",
+      "Second dose": "87.2%"
+   },
+   "Kinmen County": {
+      "url": "https://covid-19.nchc.org.tw/city_confirmed.php?mycity=\u91d1\u9580\u7e23",
+      "Total cases": "3,444",
+      "Daily cases": "+229",
+      "First dose": "90.2%",
+      "Second dose": "84%"
+   }
+}
