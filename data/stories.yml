@@ -1,0 +1,94 @@
+version: "3.1"
+
+stories:
+
+- story: covid_reports
+  steps:
+  - intent: how_many_total_cases
+  - action: action_get_report
+
+- story: covid_quarantine1
+  steps:
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: affirm
+  - action: utter_3vacc_guidelines
+
+- story: covid_quarantine2
+  steps:
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: deny
+  - action: utter_ask_vaccine_state
+  - intent: affirm
+  - action: utter_3vacc_guidelines
+
+- story: covid_quarantine3
+  steps:
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: deny
+  - action: utter_ask_vaccine_state
+  - intent: deny
+  - action: utter_novacc_guidelines
+
+- story: interactive_story_1
+  steps:
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: deny
+  - action: utter_ask_vaccine_state
+  - intent: deny
+  - action: utter_novacc_guidelines
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: deny
+  - action: utter_ask_vaccine_state
+  - intent: deny
+  - action: utter_novacc_guidelines
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: deny
+  - action: utter_ask_vaccine_state
+  - intent: deny
+  - action: utter_novacc_guidelines
+  - intent: affirm
+
+- story: interactive_story_1
+  steps:
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: deny
+  - action: utter_ask_vaccine_state
+  - intent: affirm
+  - action: utter_3vacc_guidelines
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: deny
+  - action: utter_ask_vaccine_state
+  - intent: affirm
+  - action: utter_3vacc_guidelines
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: deny
+  - action: action_ask_vaccine_state
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: deny
+  - action: utter_ask_vaccine_state
+  - intent: deny
+  - action: utter_novacc_guidelines
+  - intent: quarantine_questions
+  - action: utter_confirm_recovered_state
+  - intent: affirm
+  - action: utter_3vacc_guidelines

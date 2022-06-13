@@ -1,0 +1,68 @@
+version: "3.1"
+
+rules:
+
+- rule: Greet anytime the user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: what is covid qa?
+  steps:
+  - intent: covid_what
+  - action: utter_covid_is
+
+- rule: what is omicron qa?
+  steps:
+  - intent: omicron_what
+  - action: utter_omicron_is
+
+- rule: what is covid symptoms qa?
+  steps:
+  - intent: covid_symptoms
+  - action: utter_covid_symptoms
+
+- rule: how is covid transmitted qa?
+  steps:
+  - intent: covid_transmit
+  - action: utter_covid_transmit
+
+- rule: where is covid from qa?
+  steps:
+  - intent: covid_where
+  - action: utter_covid_where
+
+- rule: how is covid transmitted qa?
+  steps:
+  - intent: covid_transmit
+  - action: utter_covid_transmit
+
+- rule: covid test qa?
+  steps:
+  - intent: covid_test
+  - action: utter_covid_test
+
+- rule: positive result qa?
+  steps:
+  - intent: positive_questions
+  - action: utter_positive_result
+
+- rule: covid vaccine qa?
+  steps:
+  - intent: covid_vaccine
+  - action: utter_covid_vaccine
+
+- rule: reply cases when being asked bout cases
+  steps:
+  - intent: how_many_total_cases
+  - action: action_get_report

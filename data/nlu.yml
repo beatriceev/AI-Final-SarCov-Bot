@@ -1,0 +1,336 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - yo
+    - yow
+    - wassup
+    - haii
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - true
+    - right
+    - yaps
+    - yeah
+    - yea
+    - I have
+    - I did
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - nah
+    - have not
+    - haven't
+    - has not
+    - hasn't
+    - did not
+    - didn't
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: quarantine_questions
+  examples: |
+    - what are the guidelines for close contact quarantine?
+    - what should I do if I am a close contact?
+    - how long should I quarantine for if I am a close contact for covid?
+    - should I quarantine if my brother got covid?
+    - can I still go out when my roommate tested positive for COVID-19?
+    - I am a close contact with omicron, how many days should I isolate?
+    - Am I required to home isolation when my friend caught covid19?
+    - my roommate tested positive?
+    - my family tested positive?
+    - my friend is positive?
+    - I have a family that got covid?
+    - I have a friend that got positive?
+    - I have a classmate that have symptoms?
+    - I have housemates that got 2 lines on rapid test?
+- intent: positive_questions
+  examples: |
+    - What should I do if I am positive?
+    - I got positive results, how should I quarantine myself?
+    - I got covid, how many days should I isolate?
+    - Where should I live if I got covid?
+    - Am I required to home isolation when I got covid19?
+    - How long should I quarantine if my rapid test results show 2 lines?
+    - My PCR tested positive, when should I start isolating?
+    - Who should I quarantine with, if swab test is positive?
+    - What to do if I am a covid patient?
+- intent: covid_what
+  examples: |
+    - what is covid?
+    - what is covid19 hah?
+    - what is coronavirus?
+    - what is the pandemic all about?
+    - what is COVID-19?
+- intent: omicron_what
+  examples: |
+    - what is omicron?
+    - what is the omicron variant?
+    - is omicron covid?
+- intent: covid_symptoms
+  examples: |
+    - what are the symptoms for covid?
+    - How can you know if you have covid?
+    - What are the signs and symptoms of covid?
+    - How can I know if I have covid?
+- intent: covid_transmit
+  examples: |
+    - how does covid19 transmit?
+    - how is covid transmitted?
+    - What is the transmission method of covid?
+    - how corona go to other people?
+- intent: covid_where
+  examples: |
+    - where did covid originate from?
+    - is covid from Wuhan?
+    - where is covid from?
+    - who started covid?
+    - where did covid started?
+    - who is the first person who got covid?
+    - where is the first patient of covid?
+- intent: covid_test
+  examples: |
+    - what are the different tests for covid?
+    - how to get diagnosed with covid?
+    - what are the types of covid tests?
+    - How to know if you get covid?
+    - How to know if you positive?
+- intent: covid_vaccine
+  examples: |
+    - what are the different vaccines for covid in Taiwan?
+    - where to get third dose?
+    - what is the website for first and second dose?
+    - how to get vaccinated?
+    - how to get booster vaccine?
+    - how to get the third jab?
+- intent: how_many_total_cases
+  examples: |
+    - How many COVID-19 [case](type) are there in [new taipei](place)?
+    - What are the total [cases](type) of COVID-19 in [new taipei city](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [taipei](place)
+    - How many COVID-19 [cases](type) are there in [taipei city](place)?
+    - What are the total [cases](type) of COVID-19 in [taoyuan](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [taoyuan city](place)
+    - How many COVID-19 [cases](type) are there in [miaoli](place)?
+    - What are the total [cases](type) of COVID-19 in [miaoli county](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [keelung](place)
+    - How many COVID-19 [cases](type) are there in [keelung city](place)?
+    - What are the total [cases](type) of COVID-19 in [changhua](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [changhua county](place)
+    - How many COVID-19 [cases](type) are there in [taichung](place)?
+    - What are the total [cases](type) of COVID-19 in [taichung city](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [yilan](place)
+    - How many COVID-19 [cases](type) are there in [yilan county](place)?
+    - What are the total [cases](type) of COVID-19 in [hualien](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [hualien county](place)
+    - How many COVID-19 [cases](type) are there in [kaohsiung](place)?
+    - What are the total [cases](type) of COVID-19 in [kaohsiung city](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [tainan](place)
+    - How many COVID-19 [cases](type) are there in [tainan city](place)?
+    - What are the total [cases](type) of COVID-19 in [pingtung](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [pingtung county](place)
+    - How many COVID-19 [cases](type) are there in [nantou](place)?
+    - What are the total [cases](type) of COVID-19 in [nantou county](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [taitung](place)
+    - How many COVID-19 [cases](type) are there in [taitung county](place)?
+    - What are the total [cases](type) of COVID-19 in [yunlin](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [yunlin county](place)
+    - How many COVID-19 [cases](type) are there in [penghu](place)?
+    - What are the total [cases](type) of COVID-19 in [penghu county](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [lienchiang](place)
+    - How many COVID-19 [cases](type) are there in [lienchiang county](place)?
+    - What are the total [cases](type) of COVID-19 in [kinmen](place)?
+    - Show me the total number of [cases](type) of COVID-19 in [kinmen county](place)
+    - How many COVID-19 [cases](type) are there in [hsinchu](place)?
+    - What are the total [cases](type) of COVID-19 in [hsinchu city](place)
+    - Show me the total number of [cases](type) of COVID-19 in [hsinchu county](place)
+    - How many COVID-19 [cases](type) are there in [chiayi](place)?
+    - What are the total [cases](type) of COVID-19 in [chiayi city](place)
+    - Show me the total number of [cases](type) of COVID-19 in [chiayi county](place)
+    - How many COVID-19 [cases](type) are there in [taiwan](place)?
+    - What are the total [death](type) of COVID-19 in [taiwan](place)?
+    - Show me the total number of [deaths](type) of COVID-19 in [taiwan](place)
+    - How many COVID-19 [deaths](type) are there in [taiwan](place)?
+    - How many people have been [vaccinated](type) in [taiwan](place)?
+    - What are the total number of [vaccinated](type) people in [taiwan](place)?
+    - Show me the total number of [vaccine](type) people in [taiwan](place)
+    - [taiwan](place) [vaccination](type) rate
+    - How many people have received COVID-19 [vaccination](type) in [taiwan](place)?
+    - Show me the total number of people who have received COVID-19 [vaccination](type) in [taiwan](place)
+- synonym: covid
+  examples: |
+    - coronavirus disease 2019
+    - COVID-19
+    - covid 19
+    - wuhan virus
+    - coronavirus
+    - SARS-CoV-2
+- synonym: Taiwan
+  examples: |
+    - taiwan
+- synonym: New Taipei City
+  examples: |
+    - new taipei
+    - new taipei city
+- synonym: Taipei City
+  examples: |
+    - taipei
+    - taipei city
+- synonym: Taoyuan City
+  examples: |
+    - taoyuan
+    - taoyuan city
+- synonym: Miaoli County
+  examples: |
+    - miaoli
+    - miaoli county
+- synonym: Keelung City
+  examples: |
+    - keelung
+    - keelung city
+- synonym: Changhua County
+  examples: |
+    - changhua
+    - changhua county
+- synonym: Taichung City
+  examples: |
+    - taichung
+    - taichung city
+- synonym: Yilan County
+  examples: |
+    - yilan
+    - yilan county
+- synonym: Hsinchu
+  examples: |
+    - hsinchu
+- synonym: Hsinchu City
+  examples: |
+    - hsinchu city
+- synonym: Hsinchu County
+  examples: |
+    - hsinchu county
+- synonym: Hualien County
+  examples: |
+    - hualien
+    - hualien county
+- synonym: Kaouhsiung City
+  examples: |
+    - kaohsiung
+    - kaohsiung city
+- synonym: Tainan City
+  examples: |
+    - tainan
+    - tainan city
+- synonym: Pingtung County
+  examples: |
+    - pingtung
+    - pingtung county
+- synonym: Nantou County
+  examples: |
+    - nantou
+    - nantou county
+- synonym: Taitung County
+  examples: |
+    - taitung
+    - taitung county
+- synonym: Yunlin County
+  examples: |
+    - yunlin
+    - yunlin county
+- synonym: Chiayi
+  examples: |
+    - chiayi
+- synonym: Chiayi City
+  examples: |
+    - chiayi city
+- synonym: Chiayi County
+  examples: |
+    - chiayi county
+- synonym: Penghu County
+  examples: |
+    - penghu
+    - penghu county
+- synonym: Lienchiang County
+  examples: |
+    - lienchiang
+    - lienchiang county
+- synonym: Kinmen County
+  examples: |
+    - kinmen
+    - kinmen county
+- synonym: deaths
+  examples: |
+    - death
+- synonym: cases
+  examples: |
+    - case
+- synonym: vaccine
+  examples: |
+    - vaccination
+    - vaccinated
+- lookup: place
+  examples: |
+    - Taiwan
+    - New Taipei City
+    - Taipei City
+    - Taoyuan City
+    - Miaoli County
+    - Keelung City
+    - Changhua County
+    - Taichung City
+    - Yilan County
+    - Hsinchu County
+    - Hualien County
+    - Kaohsiung City
+    - Tainan City
+    - Hsinchu City
+    - Pingtung County
+    - Nantou County
+    - Taitung County
+    - Yunlin County
+    - Chiayi County
+    - Chiayi City
+    - Penghu County
+    - Lienchiang County
+    - Kinmen County
